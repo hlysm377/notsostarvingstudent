@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.min.js"></script>
+  <script src="nsss.js"></script>
+  <link rel="stylesheet" type="text/css" href="nsss.css"/>
+  <meta charset="utf-8">
+  <title>Not So Starving Student</title>  
+</head>
+<body>
+  <div ng-app='app' ng-controller='mainCtrl'>
+    <h1>Not So Starving Student</h1>
+    <nav class="{{active}}" ng-click="$event.preventDefault()">
+      <a href="#" class="home" ng-click="active='home'">home</a>
+      <a href="#" class="pics" ng-click="active='pics'">recipies</a>
+      <a href="#" class="contact" ng-click="active='contact'">contact</a>
+    </nav>
+    <h2 ng-show="active"></h2>
+
+  </div>
+</body>
+</html>
